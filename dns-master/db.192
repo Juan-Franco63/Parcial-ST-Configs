@@ -1,0 +1,17 @@
+$TTL    86400
+@       IN      SOA     ns1.servicios.com. admin.servicios.com. (
+                        2025093001 ; Serial
+                        3600       ; Refresh
+                        1800       ; Retry
+                        1209600    ; Expire
+                        86400 )    ; Minimum
+
+        IN      NS      ns1.servicios.com.
+        IN      NS      ns2.servicios.com.
+
+; PTR de la red 192.168.50.0/24
+2       IN      PTR     ftp.servicios.com.
+3       IN      PTR     firewall.servicios.com.
+4       IN      PTR     ns1.servicios.com.
+5       IN      PTR     ns2.servicios.com.
+
